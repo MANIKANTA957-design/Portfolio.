@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kolusu Uma Mani Kanta | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f8fc;
+    color:#333;
+    line-height:1.6;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#0f172a;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    box-shadow:0 2px 10px rgba(0,0,0,0.2);
+}
+
+nav h2{
+    color:white;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+.profile-section{
+    text-align:center;
+    padding:80px 20px;
+    background:linear-gradient(135deg,#1e3a8a,#2563eb);
+    color:white;
+}
+
+.profile-pic{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+    box-shadow:0 0 25px rgba(255,255,255,.4);
+    transition:.4s;
+}
+
+.profile-pic:hover{
+    transform:scale(1.05);
+}
+
+.profile-section h1{
+    margin-top:20px;
+    font-size:3rem;
+    font-weight:900;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    text-shadow:0 4px 12px rgba(0,0,0,.4);
+}
+
+.line{
+    width:120px;
+    height:4px;
+    background:white;
+    margin:15px auto;
+    border-radius:10px;
+}
+
+.profile-section p{
+    font-size:1.2rem;
+    font-weight:600;
+}
+
+.resume-btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 28px;
+    border-radius:30px;
+    background:#38bdf8;
+    color:black;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.resume-btn:hover{
+    background:white;
+    transform:translateY(-3px);
+}
+
+.links{
+    margin-top:25px;
+}
+
+.links a{
+    display:inline-block;
+    margin:8px;
+    padding:10px 20px;
+    background:white;
+    color:#1e3a8a;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.links a:hover{
+    background:#38bdf8;
+    color:black;
+}
+
+section{
+    padding:80px 10%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#1e3a8a;
+    font-size:2.2rem;
+}
+
+h2::after{
+    content:'';
+    display:block;
+    width:80px;
+    height:4px;
+    background:#38bdf8;
+    margin:10px auto;
+    border-radius:10px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.skills .card{
+    text-align:center;
+}
+
+.skills h3{
+    color:#1e3a8a;
+    margin-bottom:10px;
+}
+
+#projects ul{
+    padding-left:20px;
+}
+
+#projects li{
+    margin-bottom:10px;
+}
+
+.contact p{
+    margin-bottom:15px;
+}
+
+.contact a{
+    color:#2563eb;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.contact a:hover{
+    color:#0ea5e9;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        margin-top:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    nav ul li{
+        margin:8px;
+    }
+
+    .profile-pic{
+        width:150px;
+        height:150px;
+    }
+
+    .profile-section h1{
+        font-size:2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>Portfolio</h2>
+
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="profile-section">
+
+    <img src="photo2.jpeg" alt="Mani Kanta" class="profile-pic">
+
+    <h1>Kolusu Uma Mani Kanta</h1>
+
+    <div class="line"></div>
+
+    <p>B.Tech Computer Science & Engineering</p>
+
+    <a href="Resume.pdf" download class="resume-btn">
+        Download Resume
+    </a>
+
+    <div class="links">
+
+        <a href="https://github.com/MANIKANTA957-design" target="_blank">
+            GitHub
+        </a>
+
+        <a href="https://linkedin.com/in/manikanta-kolusu-650412338" target="_blank">
+            LinkedIn
+        </a>
+
+        <a href="https://leetcode.com/u/Manikantakolusu" target="_blank">
+            LeetCode
+        </a>
+
+    </div>
+
+</section>
+
+<section id="about">
+
+    <h2>About Me</h2>
+
+    <div class="card">
+        <p>
+            I am a Computer Science undergraduate at Lakireddy Balireddy College of Engineering.
+            I have strong foundations in programming, data structures, web development,
+            and software engineering. I am passionate about problem-solving,
+            competitive programming, and learning modern technologies.
+        </p>
+    </div>
+
+</section>
+
+<section id="skills">
+
+    <h2>Technical Skills</h2>
+
+    <div class="skills">
+
+        <div class="card">
+            <h3>Programming Languages</h3>
+            <p>C</p>
+            <p>C++</p>
+            <p>Java</p>
+            <p>Python</p>
+        </div>
+
+        <div class="card">
+            <h3>Web Technologies</h3>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+        </div>
+
+        <div class="card">
+            <h3>Libraries</h3>
+            <p>NumPy</p>
+            <p>Pandas</p>
+            <p>Matplotlib</p>
+        </div>
+
+        <div class="card">
+            <h3>Tools</h3>
+            <p>GitHub</p>
+            <p>VS Code</p>
+            <p>LaTeX</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="education">
+
+    <h2>Education</h2>
+
+    <div class="card">
+        <h3>Lakireddy Balireddy College of Engineering</h3>
+        <p>B.Tech - Computer Science & Engineering</p>
+        <p>Expected Graduation: 2028</p>
+    </div>
+
+    <div class="card">
+        <h3>Sri Chaitanya Junior College</h3>
+        <p>Intermediate</p>
+        <p>Percentage: 95.7%</p>
+        <p>AP EAMCET Rank: 11940</p>
+    </div>
+
+</section>
+
+<section id="projects">
+
+    <h2>Projects</h2>
+
+    <div class="card">
+
+        <h3>Smart Medication Reminder App</h3>
+
+        <ul>
+            <li>Automated medication reminders.</li>
+            <li>Dosage tracking system.</li>
+            <li>Daily medication history.</li>
+            <li>User-friendly interface.</li>
+            <li>Medicine management features.</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<section id="certifications">
+
+    <h2>Certifications</h2>
+
+    <div class="card">
+        <p>Python Essentials 1 & 2 - Cisco</p>
+        <p>Introduction to SQL - Simplilearn</p>
+        <p>Machine Learning Using Python - Simplilearn</p>
+        <p>Introduction to Generative AI - Google Cloud</p>
+        <p>Introduction to HTML - Infosys Springboard</p>
+        <p>Mastering CSS - Infosys Springboard</p>
+        <p>Practical HTML & CSS - Infosys Springboard</p>
+    </div>
+
+</section>
+
+<section id="contact">
+
+    <h2>Contact Me</h2>
+
+    <div class="card contact">
+
+        <p>
+            Email:
+            <a href="mailto:manikantakolusu1306@gmail.com">
+                manikantakolusu1306@gmail.com
+            </a>
+        </p>
+
+        <p>
+            Phone:
+            <a href="tel:+917799166591">
+                +91 7799166591
+            </a>
+        </p>
+
+        <p>
+            GitHub:
+            <a href="https://github.com/MANIKANTA957-design" target="_blank">
+                View GitHub Profile
+            </a>
+        </p>
+
+        <p>
+            LinkedIn:
+            <a href="https://linkedin.com/in/manikanta-kolusu-650412338" target="_blank">
+                View LinkedIn Profile
+            </a>
+        </p>
+
+        <p>
+            LeetCode:
+            <a href="https://leetcode.com/u/Manikantakolusu" target="_blank">
+                View LeetCode Profile
+            </a>
+        </p>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Kolusu Uma Mani Kanta | Portfolio</p>
+</footer>
+
+</body>
+</html>
